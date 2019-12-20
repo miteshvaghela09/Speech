@@ -104,7 +104,7 @@
                 [self->speechTimer invalidate];
             }
             if(!isFinal) {
-                self->speechTimer = [NSTimer scheduledTimerWithTimeInterval:30.0 repeats:FALSE block:^(NSTimer * _Nonnull timer) {
+                self->speechTimer = [NSTimer scheduledTimerWithTimeInterval:3000.0 repeats:FALSE block:^(NSTimer * _Nonnull timer) {
                     [self stop:nil];
                 }];
             }

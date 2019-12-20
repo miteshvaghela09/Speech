@@ -76,6 +76,7 @@ public class FlutterSpeechRecognitionPlugin implements MethodCallHandler, Recogn
         break;
       case "speech.listen":
         speech.startListening(recognizerIntent);
+
         result.success(true);
         break;
       case "speech.cancel":
