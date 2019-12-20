@@ -25,7 +25,7 @@ import java.util.ArrayList;
 public class FlutterSpeechRecognitionPlugin implements MethodCallHandler, RecognitionListener, PluginRegistry.RequestPermissionsResultListener {
 
   private static final String LOG_TAG = "FlutterSpeechPlugin";
-  private static final int MY_PERMISSIONS_RECORD_AUDIO = 16669;
+  private static final int MY_PERMISSIONS_RECORD_AUDIO = 30000;
   private SpeechRecognizer speech;
   private MethodChannel speechChannel;
   private String transcription = "";
