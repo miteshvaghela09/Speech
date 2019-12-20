@@ -104,7 +104,7 @@
                 [self->speechTimer invalidate];
             }
             if(!isFinal) {
-                self->speechTimer = [NSTimer scheduledTimerWithTimeInterval:12.0 repeats:FALSE block:^(NSTimer * _Nonnull timer) {
+                self->speechTimer = [NSTimer scheduledTimerWithTimeInterval:12.0 repeats:TRUE block:^(NSTimer * _Nonnull timer) {
                     [self stop:nil];
                     [self->channel invokeMethod:@"speech.onRecognitionComplete" arguments:[speechResult.bestTranscription formattedString]];
                 }];
